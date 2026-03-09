@@ -13,3 +13,14 @@ Route::get('/', function () {
 
     return view('index', $data);
 });
+
+
+Route::get('/docs', function () {
+
+    return view('docs');
+})->name('docs');
+
+Route::get('/example', function () {
+
+    return view('example');
+})->name('example');

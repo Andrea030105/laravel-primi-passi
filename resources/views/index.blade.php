@@ -14,22 +14,23 @@
 </head>
 
 <body>
-    <div class="text-center my-3">
-        <h1 class="text-danger fw-bold">
-            Hello World
-        </h1>
-        <ul class="list-unstyled fs-4">
-            <li>
-                {{ $home }}
-            </li>
-            <li>
-                {{ $docs }}
-            </li>
-            <li>
-                {{ $example }}
-            </li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-bg-secondary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{'docs'}}">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{'example'}}">Example</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </body>
 
 </html>
