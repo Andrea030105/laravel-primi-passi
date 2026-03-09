@@ -3,5 +3,13 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('index');
+
+    $data = [
+        'home' => 'Home',
+        'docs' => 'Docs',
+        'example' => 'Example',
+    ];
+
+
+    return view('index', $data);
 });

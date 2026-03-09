@@ -14,9 +14,22 @@
 </head>
 
 <body>
-    <h1 class="text-center my-3">
-        Hello World
-    </h1>
+    <div class="text-center my-3">
+        <h1 class="text-danger fw-bold">
+            Hello World
+        </h1>
+        <ul class="list-unstyled fs-4">
+            <li>
+                {{ $home }}
+            </li>
+            <li>
+                {{ $docs }}
+            </li>
+            <li>
+                {{ $example }}
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>
